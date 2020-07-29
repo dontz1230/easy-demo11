@@ -207,137 +207,69 @@
     <table class="blueTable">
       <thead>
         <tr>
-          <th style="width:20%;" rowspan="2">應變階段</th>
-          <th style="width:25%;" rowspan="2">工作項目</th>
-          <th colspan="6">每項工作至少要有一個組別負責</th>
-        </tr>
-        <tr>
-          <th style="width:9%">指揮官</th>
-          <th style="width:9%">通報</th>
-          <th style="width:9%">搶救</th>
-          <th style="width:9%">救護</th>
-          <th style="width:9%">避難引導</th>
-          <th style="width:9%">安全防護</th>
+          <th style="width: 15%;">應變時序</th>
+          <th style="width: 15%;">工作項目</th>
+          <th style="width: 23%;">工作內容</th>
+          <th style="width: 15%;">日間負責人</th>
+          <th style="width: 15%;">夜間負責人</th>
+          <th>修改</th>
+          <th>刪除</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th>1a. 確保人員安全</th>
-          <td>協助住民穩住重心</td>
-          <td class="dispatched">已分派</td>
-          <td class="dispatched">已分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td class="dispatched">已分派</td>
+          <th style="width: 15%;">1a. 確保人員安全</th>
+          <td style="width: 15%;">統計傷患、安排送醫</td>
+          <td style="width: 23%;">統計傷患、安排送醫</td>
+          <td style="width: 15%;">安全防護班ＯＯＯ，避難引導班ＯＯＯ</td>
+          <td style="width: 15%;">安全防護班ＯＯＯ</td>
+          <td class="underline">修改</td>
+          <td class="underline">刪除</td>
         </tr>
         <tr>
-          <th>1a. 確保人員安全</th>
-          <td>統計傷患、安排送醫</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td class="dispatched">已分派</td>
-          <td class="dispatched">已分派</td>
-          <td class="dispatched">已分派</td>
+          <th style="width: 15%;">1b. 動員機構人員</th>
+          <td style="width: 15%;">召回應變人員</td>
+          <td style="width: 23%;">制定人員的召回機制，包含機構的地震、颱洪應變啟動時間、集合地點、訊息通知方式</td>
+          <td style="width: 15%;">指揮官ＯＯＯ</td>
+          <td style="width: 15%;">指揮官ＯＯＯ，通報班ＯＯＯ</td>
+          <td class="underline">修改</td>
+          <td class="underline">刪除</td>
         </tr>
         <tr>
-          <th>1b. 動員機構人員</th>
-          <td>召回應變人員</td>
-          <td class="dispatched">已分派</td>
-          <td class="dispatched">已分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
+          <th style="width: 15%;">1b. 動員機構人員</th>
+          <td style="width: 15%;">指揮應變小組運作</td>
+          <td style="width: 23%;">指揮應變小組運作</td>
+          <td style="width: 15%;">通報班ＯＯＯ</td>
+          <td style="width: 15%;">指揮官ＯＯＯ</td>
+          <td class="underline">修改</td>
+          <td class="underline">刪除</td>
         </tr>
         <tr>
-          <th>1b. 動員機構人員</th>
-          <td>指揮應變小組運作</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td class="dispatched">已分派</td>
-          <td class="dispatched">已分派</td>
-          <td class="dispatched">已分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td class="dispatched">已分派</td>
+          <th style="width: 15%;">2. 收集資訊</th>
+          <td style="width: 15%;">收集災害資訊</td>
+          <td style="width: 23%;">準備兩個以上獲得災害資訊的管道</td>
+          <td style="width: 15%;">救護班ＯＯＯ</td>
+          <td style="width: 15%;">救護班ＯＯＯ</td>
+          <td class="underline">修改</td>
+          <td class="underline">刪除</td>
         </tr>
-
         <tr>
-          <th>2. 收集資訊</th>
-          <td>收集災害資訊</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
+          <th style="width: 15%;">2. 收集資訊</th>
+          <td style="width: 15%;">巡視機構周邊設施</td>
+          <td style="width: 23%;">檢查建物、重要設施（例如，水、電、瓦斯等維生管線）的損壞情況</td>
+          <td style="width: 15%;">搶救班ＯＯＯ，搶救班ＯＯＯ，搶救班ＯＯＯ</td>
+          <td style="width: 15%;">搶救班ＯＯＯ</td>
+          <td class="underline">修改</td>
+          <td class="underline">刪除</td>
         </tr>
-
         <tr>
-          <th>2. 收集資訊</th>
-          <td>巡視機構周邊設施</td>
-          <td class="dispatched">已分派</td>
-          <td class="dispatched">已分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td class="dispatched">已分派</td>
-        </tr>
-
-        <tr>
-          <th>2. 收集資訊</th>
-          <td>收集機構災情</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td class="dispatched">已分派</td>
-          <td class="dispatched">已分派</td>
-          <td class="dispatched">已分派</td>
-        </tr>
-
-        <tr>
-          <th>2. 收集資訊</th>
-          <td>盤點機構物資</td>
-
-          <td class="dispatched">已分派</td>
-          <td class="dispatched">已分派</td>
-          <td class="dispatched">已分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-        </tr>
-
-        <tr>
-          <th>2. 收集資訊</th>
-          <td>收集疏散避難資訊</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td class="dispatched">已分派</td>
-          <td class="dispatched">已分派</td>
-          <td class="dispatched">已分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td class="dispatched">已分派</td>
-        </tr>
-
-        <tr>
-          <th>3. 判斷避難模式</th>
-          <td>依現場情況決定避難模式</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-        </tr>
-
-        <tr>
-          <th>3. 判斷避難模式</th>
-          <td>通知機構內人員</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td class="dispatched">已分派</td>
-          <td class="dispatched">已分派</td>
-          <td class="dispatched">已分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
-          <td @click="modal = !modal" class="pointer undispatched">未分派</td>
+          <th style="width: 15%;">2. 收集資訊</th>
+          <td style="width: 15%;">收集機構災情</td>
+          <td style="width: 23%;">了解各種警戒資訊的作用與分級標準</td>
+          <td style="width: 15%;">搶救班ＯＯＯ</td>
+          <td style="width: 15%;">救護班ＯＯＯ</td>
+          <td class="underline">修改</td>
+          <td class="underline">刪除</td>
         </tr>
       </tbody>
     </table>
@@ -358,8 +290,7 @@ export default {
         { content: "", remnant: 50, limit: 500 },
       ],
       pointing: 0,
-      showrow: 4,
-      upload: "",
+      showrow: 0,
     };
   },
   methods: {
@@ -468,26 +399,5 @@ input[type="checkbox"] {
   width: 20px;
   height: 20px;
   margin: 0 5px 0 10px;
-}
-
-.dispatched {
-  text-align: center;
-  background: #f45454;
-  color: #fff;
-  border-radius: 10px;
-}
-
-// .styleBlock__text {
-//   text-align: center;
-//   background: #bcbcbc;
-//   color: #fff;
-//   border-radius: 10px;
-// }
-
-.undispatched {
-  text-align: center;
-  background: #bcbcbc;
-  color: #fff;
-  border-radius: 10px;
 }
 </style>

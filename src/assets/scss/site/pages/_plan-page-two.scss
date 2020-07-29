@@ -16,10 +16,16 @@
       left: auto;
       -webkit-appearance: checkbox;
     }
+    input[type="text"] {
+      border-color: #d4d4d4;
+      margin-left: 15px;
+    }
     label {
       padding: 0;
       font-size: 1rem;
-      font-weight: normal!important;
+      font-weight: bold!important;
+      color: #8e8e8e;
+          margin-left: 5px;
       &:before {
         display:none;
       }
@@ -28,7 +34,7 @@
 }
 
 .col-3 {
- grid-template-columns: 190px 190px 420px!important;
+ grid-template-columns: 190px 190px 460px!important;
 }
 
 
@@ -56,7 +62,9 @@ input[type="text"]{
     height: 47px;
   border-radius: 4px;
   margin-bottom:12px;
-  color: #858585;
+  border: 1px solid;
+    border-color: #d5d5d5;
+
 }
 
 .addBtn {

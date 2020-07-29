@@ -45,6 +45,10 @@ textarea {
 	width: 100%;
 	border-radius: 0;
 	overflow-y:hidden;
+	&:focus {
+		 outline: none !important;
+		border-color: 
+	}
 }
 textarea::-webkit-scrollbar {
 	display:none;
@@ -61,10 +65,12 @@ input.checkbox-text[type="text"] {
 }
 
 
+
+
 textarea {
 	height: auto;
+	
 }
-
 
 
 ._form-captcha{

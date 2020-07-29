@@ -10,8 +10,8 @@
       <div class="content">
         <slot>默认值</slot>
       </div>
-      <footer v-if="!test" class="modalFooter" @click="submitForm">
-        <slot @click="submitForm" name="footer"></slot>
+      <footer v-if="!test" class="modalFooter" @click="replace">
+        <slot name="footer"></slot>
       </footer>
     </div>
     <div class="whitedrop"></div>
@@ -33,18 +33,17 @@ export default {
       type: Boolean,
       default: false,
     },
+    // oneText:{
+
+    // }
   },
   methods: {
     closeModal() {
       console.log("clicked");
       this.$emit("closeModal");
     },
-    submitForm() {
-      console.log("submit");
-      this.$emit("submitForm");
-      this.$router.push({
-        path: "planpage",
-      });
+    replace() {
+      this.$emit("replace");
     },
   },
   mounted() {

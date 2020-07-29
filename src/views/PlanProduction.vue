@@ -9,8 +9,18 @@
         <img v-if="active === 3" src="../assets/img/planList/03.jpg" alt />
         <img v-if="active === 4" src="../assets/img/planList/04.jpg" alt />
       </div>
-      <div v-if="active !== 1" class="swiper-button-prev" @click="changePage('prev')" style="color:#fff;"></div>
-      <div v-if="active !==4 " class="swiper-button-next" @click="changePage('next')"  style="color:#fff;"></div>
+      <div
+        v-if="active !== 1"
+        class="swiper-button-prev"
+        @click="changePage('prev')"
+        style="color:#fff;"
+      ></div>
+      <div
+        v-if="active !==4 "
+        class="swiper-button-next"
+        @click="changePage('next')"
+        style="color:#fff;"
+      ></div>
     </div>
     <div class="dotContainer">
       <div
@@ -20,7 +30,7 @@
         @click="changeDot(item)"
         :class="{'activeDot' : active === item}"
       ></div>
-      <router-link to="planpage" class="skip">跳過</router-link>
+      <router-link to="planlist" class="skip">跳過</router-link>
     </div>
   </div>
 </template>
@@ -30,7 +40,7 @@ import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import "swiper/css/swiper.min.css";
 
 export default {
-  data: function() {
+  data: function () {
     return {
       isLoading: false,
       swiperOption: {
@@ -51,46 +61,47 @@ export default {
         //   prevEl: ".swiper-button-prev"
         // }
       },
-      active:1
+      active: 1,
     };
   },
   components: {
     Swiper,
-    SwiperSlide
+    SwiperSlide,
   },
   computed: {},
   methods: {
     changeDot(index) {
       console.log(index);
-      this.active = index
+      this.active = index;
     },
-    changePage(type){
-      if(type === 'prev'){
-        this.active --
+    changePage(type) {
+      if (type === "prev") {
+        this.active--;
       } else {
-        this.active ++
+        this.active++;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
 @import "../assets/scss/style.scss";
 .planProduction {
-  width: 90%;
+  max-width: 1280px;
   margin: auto;
   height: 100%;
-  overflow:hidden;
+  overflow: hidden;
 }
 .title {
   font-size: 1.5rem;
   color: $themeGreen;
   padding: 36px 22px;
+  font-weight: bold;
 }
 
 .imgContainer {
-      border-radius: 28px;
-    overflow: hidden;
+  border-radius: 28px;
+  overflow: hidden;
 }
 img {
   width: 100%;
@@ -128,8 +139,8 @@ img {
   margin: 0 10px;
 }
 .dotContainer {
-  margin:auto;
-  text-align:center;
+  margin: auto;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -137,7 +148,7 @@ img {
 }
 
 .activeDot {
-  background:#008780!important;
+  background: #008780 !important;
 }
 
 .skip {
@@ -149,7 +160,7 @@ img {
   padding: 0px 16px;
   border-radius: 100px;
   &:hover {
-    color:#fff;
+    color: #fff;
     background: #469b89;
   }
 }

@@ -23,7 +23,9 @@
         data-red="天然災害應變流程應考慮機構本身的地理環境、設備，以及人力等實際情況進行規劃。
 可依據機構需求自行上傳流程圖，或是採用本系統提供的範本。
 目前範本上為預先設定的應變步驟，實際的災害應變流程並非一成不變，機構人員要依照現場情況調整應變步驟。"
-      ><i class="fas fa-question"></i></div>
+      >
+        <i class="fas fa-question"></i>
+      </div>
     </div>
     <div class="planJob">
       <div class="planTitle__text inline">應變流程</div>
@@ -37,29 +39,41 @@
         data-red="可選擇使用範本或自行上傳：
 若使用範本，僅能修改既定流程中的文字，無法彈性增加或刪減應變時序。
 若自行上傳流程圖，較符合機構需求，但後續應變時序須自行編輯。"
-      ><i class="fas fa-question"></i></div>
+      >
+        <i class="fas fa-question"></i>
+      </div>
     </div>
 
     <div class="teamClass">
-      <div class="teamClass__block">
-      <span>使用範本流程圖</span>
-        <input type="checkbox"name="temp" />
-        <label class="label" for="temp"></label>
+      <div class="styleBlock__text">
+        <input type="radio" value name="style" id @change="uploadThing" v-model="upload" />
+        <label for="style">使用範本流程圖</label>
       </div>
-      <div class="teamClass__block">
-      <span>自行上傳流程圖</span>
-        <input type="checkbox" id="upload"/>
-        <label class="label" for="upload"></label>
+      <div class="styleBlock__text">
+        <input type="radio" value="upload" name="style" @change="uploadThing" id v-model="upload" />
+        <label for="style">自行上傳流程圖</label>
       </div>
     </div>
+    <div class="uploadImg" v-if="upload === 'upload'">
+      <span class="greyText">上傳圖片</span>
+      <input type="file" name id />
+    </div>
+    <div class="greyText" style="margin:20px 0;">目前已上傳的圖片：</div>
     <img src="~@/assets/img/planList/process-template.jpg" alt />
   </div>
 </template>
 <script>
 export default {
   data() {
-    return {};
-  }
+    return {
+      upload: false,
+    };
+  },
+  methods: {
+    uploadThing() {
+      this.$emit("uploadThing", this.upload);
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -69,7 +83,7 @@ export default {
 
 .teamClass {
   display: flex;
-      width: 500px;
+  width: 500px;
   justify-content: space-between;
   margin-bottom: 15px;
   &__block {
@@ -114,5 +128,42 @@ export default {
     display: inline-block;
     float: right;
   }
+}
+
+input[type="radio"] {
+  display: inline-block;
+  left: unset;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50em;
+  -webkit-appearance: auto;
+  margin-right: 8px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50em;
+    border: 4px solid #d4d4d4;
+  }
+  &:checked::before {
+    background: #66cdb6;
+  }
+}
+
+.styleBlock__text input[type="radio"] {
+  top: 0 !important;
+}
+
+.styleBlock__text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 182px;
+  margin-bottom: 2px;
+  color: #777;
 }
 </style>

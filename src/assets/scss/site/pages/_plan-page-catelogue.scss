@@ -6,19 +6,66 @@
 
 .stepList {
   display: flex;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   color: #747474;
   &__dot {
     margin-right: 14px;
     width: 30px;
     height: 30px;
-    background: #66cdb6;
+    background: #fff;
     border-radius: 100%;
     border: 3px solid #eaeaea;
   }
   &__index {
+        font-weight: bold;
   }
 
   &__title {
+        font-weight: bold;
   }
+}
+
+.activeDot {
+  background: #66cdb6!important;
+}
+
+.ad1 {
+  background: #66cdb6!important;
+}
+
+.ad2 {
+  background: #66cdb6!important;
+}
+
+.ad3 {
+  background: #66cdb6!important;
+}
+
+.ad4 {
+  background: #66cdb6!important;
+}
+
+.ad5 {
+  background: #66cdb6!important;
+}
+
+.ad6 {
+  background: #66cdb6!important;
+}
+
+.ad7 {
+  background: #66cdb6!important;
+}
+
+.ad8 {
+  background: #66cdb6!important;
+}
+
+
+.ad9 {
+  background: #66cdb6!important;
+}
+
+.ad10 {
+  background: #66cdb6!important;
 }

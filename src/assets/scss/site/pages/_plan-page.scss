@@ -92,6 +92,11 @@
 
     textarea {
       width:100%;
+      border: 1px solid #d4d4d4;
+      &:focus { 
+    outline: none !important;
+    border-color: rgb(64, 64, 64);;
+}
     }
 }
 
@@ -110,3 +115,11 @@
   margin: 0 12px;
 }
 
+.checkIcon {
+  font-family: Arial!important;
+  text-align: center;
+}
+
+.greyText {
+  color: #777;
+}

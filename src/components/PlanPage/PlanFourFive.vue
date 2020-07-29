@@ -13,7 +13,7 @@
     </div>
     <div class="planTopic">
       <div class="themeColor">(一)地震災害應變流程</div>
-<div
+      <div
         class="planTitle__redIcon"
         style="
     display: inline-block;
@@ -23,12 +23,14 @@
         data-red="天然災害應變流程應考慮機構本身的地理環境、設備，以及人力等實際情況進行規劃。
 可依據機構需求自行上傳流程圖，或是採用本系統提供的範本。
 目前範本上為預先設定的應變步驟，實際的災害應變流程並非一成不變，機構人員要依照現場情況調整應變步驟。"
-      ><i class="fas fa-question"></i></div>
+      >
+        <i class="fas fa-question"></i>
+      </div>
     </div>
 
     <div class="planJob">
       <div class="planTitle__text inline">應變工作小組檢核表</div>
-<div
+      <div
         class="planTitle__redIcon"
         style="
     display: inline-block;
@@ -39,7 +41,9 @@
 1. 災前：協助機構人員了解自己於應變各階段所需要進行的工作，避免工作過於集中於某些應變小組。
 2. 災中應變：檢查應變過程中，是否有遺漏的重要事項。
 此工作檢核表記載應變小組在各階段的主要工作，但實際應變時，指揮官可依各組別的工作量而調整工作內容。"
-      ><i class="fas fa-question"></i></div>
+      >
+        <i class="fas fa-question"></i>
+      </div>
     </div>
 
     <table class="blueTable">
@@ -59,18 +63,12 @@
         <tr>
           <th style="width: 25%;">1a. 確保人員安全</th>
           <td style="width: 25%;">協助住民穩住重心</td>
-          <td>
-            <i class="fas fa-check"></i>
-          </td>
+          <td class="checkIcon">&#10003;</td>
           <td></td>
           <td></td>
           <td></td>
-          <td>
-            <i class="fas fa-check"></i>
-          </td>
-          <td>
-            <i class="fas fa-check"></i>
-          </td>
+          <td class="checkIcon">&#10003;</td>
+          <td class="checkIcon">&#10003;</td>
         </tr>
         <tr>
           <th style="width: 25%;">1a. 確保人員安全</th>
@@ -78,9 +76,7 @@
           <td></td>
           <td></td>
           <td></td>
-          <td>
-            <i class="fas fa-check"></i>
-          </td>
+          <td class="checkIcon">&#10003;</td>
           <td></td>
           <td></td>
         </tr>
@@ -88,9 +84,7 @@
           <th style="width: 25%;">1b. 動員機構人員</th>
           <td style="width: 25%;">召回應變人員</td>
           <td></td>
-          <td>
-            <i class="fas fa-check"></i>
-          </td>
+          <td class="checkIcon">&#10003;</td>
           <td></td>
           <td></td>
           <td></td>
@@ -99,9 +93,7 @@
         <tr>
           <th style="width: 25%;">1b. 動員機構人員</th>
           <td style="width: 25%;">指揮應變小組運作</td>
-          <td>
-            <i class="fas fa-check"></i>
-          </td>
+          <td class="checkIcon">&#10003;</td>
           <td></td>
           <td></td>
           <td></td>
@@ -112,9 +104,7 @@
           <th style="width: 25%;">2. 收集資訊</th>
           <td style="width: 25%;">收集災害資訊</td>
           <td></td>
-          <td>
-            <i class="fas fa-check"></i>
-          </td>
+          <td class="checkIcon">&#10003;</td>
           <td></td>
           <td></td>
           <td></td>
@@ -128,9 +118,7 @@
           <td></td>
           <td></td>
           <td></td>
-          <td>
-            <i class="fas fa-check"></i>
-          </td>
+          <td class="checkIcon">&#10003;</td>
         </tr>
         <tr>
           <th style="width: 25%;">2. 收集資訊</th>
@@ -138,9 +126,7 @@
           <td></td>
           <td></td>
           <td></td>
-          <td>
-            <i class="fas fa-check"></i>
-          </td>
+          <td class="checkIcon">&#10003;</td>
           <td></td>
           <td></td>
         </tr>
@@ -149,9 +135,7 @@
           <td style="width: 25%;">盤點機構物資</td>
           <td></td>
           <td></td>
-          <td>
-            <i class="fas fa-check"></i>
-          </td>
+          <td class="checkIcon">&#10003;</td>
           <td></td>
           <td></td>
           <td></td>
@@ -163,17 +147,13 @@
           <td></td>
           <td></td>
           <td></td>
-          <td>
-            <i class="fas fa-check"></i>
-          </td>
+          <td class="checkIcon">&#10003;</td>
           <td></td>
         </tr>
         <tr>
           <th style="width: 25%;">3. 判斷避難模式</th>
           <td style="width: 25%;">依現場情況決定避難模式</td>
-          <td>
-            <i class="fas fa-check"></i>
-          </td>
+          <td class="checkIcon">&#10003;</td>
           <td></td>
           <td></td>
           <td></td>
@@ -184,9 +164,7 @@
           <th style="width: 25%;">3. 判斷避難模式</th>
           <td style="width: 25%;">通知機構內人員</td>
           <td></td>
-          <td>
-            <i class="fas fa-check"></i>
-          </td>
+          <td class="checkIcon">&#10003;</td>
           <td></td>
           <td></td>
           <td></td>
@@ -200,7 +178,7 @@
 export default {
   data() {
     return {};
-  }
+  },
 };
 </script>
 <style lang="scss" scoped>

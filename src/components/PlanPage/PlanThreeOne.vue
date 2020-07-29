@@ -1,7 +1,7 @@
 <template>
   <div class="plan-section">
     <div class="planHeader">
-      <div class="planHeader__title">災害風險評估</div>
+      <div class="planHeader__title"  style="margin-right: 20px;">災害風險評估</div>
       <div class="planHeader__option">
         <img src="~@/assets/img/planList/advice.png" alt />
         <span>撰寫原則或建議</span>
@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="planTopic">
-      <div class="themeColor">(一)自然災害風險檢查系統初評結果
+      <div class="themeColor">(一)天然災害風險檢查系統評估結果
         <div class="planTitle__redIcon" style="
     display: inline-block;
     text-align: center;
